@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+## This tool will stop openhab 2 then clear cache and tmp.
+## after this it will reboot.
+##
+## Created by Danny Mullen July 2018
+## https://dannymullen.com
+## Git: http://github.com/thedannymullen/OHtools
+## Revision 1.0 Initial Release July 2018 Danny Mullen
+
+sudo systemctl stop openhab2.service && rm -rf $OPENHAB_USERDATA/tmp/* && rm -rf $OPENHAB_USERDATA/cache/* && sudo reboot 

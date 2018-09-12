@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+## This tool will restart the openhab2 service.  If Openhab2 is running it
+## restart openhab2.  
+## Created by Danny Mullen July 2018
+## https://dannymullen.com
+## Git: http://github.com/thedannymullen/OHtools
+## Revision 1.0 Initial Release July 2018 Danny Mullen
+
+
+echo "Restarting/Starting Openhab2 "
+
+sudo systemctl restart openhab2.service
+
+echo "Done restarting Openhab2"

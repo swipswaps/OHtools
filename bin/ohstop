@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+## This tool will stop the openhab2 service.
+## Created by Danny Mullen July 2018
+## https://dannymullen.com
+## Git: http://github.com/thedannymullen/OHtools
+## Revision 1.0 Initial Release July 2018 Danny Mullen
+
+
+echo "Stopping Openhab2 "
+
+sudo systemctl stop openhab2.service
+
+echo "Done Stopping Openhab2"

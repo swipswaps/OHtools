@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+## This tool will restart the openhab2 service.  If Openhab2 is not running it
+## start openhab2. Between restaring/starting it will clear the cache and tmp.
+## This tool will then tail the OH2 logfile.  
+## Created by Danny Mullen July 2018
+## https://dannymullen.com
+## Git: http://github.com/thedannymullen/OHtools
+## Revision 1.0 Initial Release July 2018 Danny Mullen
+
+
+echo "Stopping Openhab2 and clearing cache"
+sudo systemctl stop openhab2.service && rm -rf $OPENHAB_USERDATA/tmp/* && rm -rf $OPENHAB_USERDATA/cache/* && sudo systemctl start openhab2.service && tail -f /var/log/openhab2/openhab.log
+echo "Done starting the tail of var.log.openhab2.openhab.log"
