@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+## This tool will clone and install the OHtools!  
+## Created by Danny Mullen July 2018
+## https://dannymullen.com
+## Git: http://github.com/thedannymullen/OHtools
+## Revision 1.0 Initial Release July 2018 Danny Mullen
+
+
+echo "Cloning the repository: http://github.com/thedannymullen/OHtools "
+git clone https://github.com/thedannymullen/OHtools/ /tmp/OHtools
+
+echo "Copying the files to the bin directory"
+sudo cp /tmp/OHtools/bin/* /usr/local/bin/
+sudo chmod 755 /usr/local/bin/oh*
+
+echo "Done"
