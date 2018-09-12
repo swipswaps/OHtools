@@ -5,6 +5,7 @@ Auto Install:
 Installs to the /usr/local/bin folder.
 
 git clone https://github.com/thedannymullen/OHtools/ /tmp/OHtools
+
 sudo sh /tmp/OHtools/OHtoolsgitinstall
 
 Manual Install:
